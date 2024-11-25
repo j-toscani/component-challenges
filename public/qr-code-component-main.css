@@ -2,9 +2,8 @@
 
 @layer base {
   :root {
-
-    --border-radius-s: 8px;
-    --border-radius-m: 10px;
+    --border-radius-s: 12px;
+    --border-radius-m: 18px;
 
     --font-weight-medium: 400;
     --font-weight-bold: 700;
@@ -43,6 +42,11 @@
     font-weight: var(--font-weight-bold);
   }
 
+  .cta + p {
+    line-height: 1.5;
+    color: var(--color-slate-500);
+  }
+
   .card {
     background-color: var(--color-white);
     max-width: 288px;
@@ -50,10 +54,13 @@
     margin: auto;
     border-radius: var(--border-radius-m);
     text-align: center;
+
+    box-shadow: 0px 7.1px 9.3px -61px rgba(0, 0, 0, 0.182),
+      0px 52px 31px -61px rgba(0, 0, 0, 0.35);
   }
 
   .card-text {
-    padding: 0 1rem;
+    padding: 0.25rem 1rem;
   }
 
   img {
@@ -61,6 +68,5 @@
     height: auto;
     aspect-ratio: 1/1;
     border-radius: var(--border-radius-s);
-
   }
 }
