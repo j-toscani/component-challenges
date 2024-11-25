@@ -1,0 +1,66 @@
+@layer base, component;
+
+@layer base {
+  :root {
+
+    --border-radius-s: 8px;
+    --border-radius-m: 10px;
+
+    --font-weight-medium: 400;
+    --font-weight-bold: 700;
+
+    --color-white: hsl(0, 0%, 100%);
+    --color-slate-300: hsl(212, 45%, 89%);
+    --color-slate-500: hsl(216, 15%, 48%);
+    --color-slate-900: hsl(218, 44%, 22%);
+  }
+
+  body {
+    background-color: var(--color-slate-300);
+    color: var(--color-slate-900);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+@layer component {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: var(--font-weight-medium);
+  }
+
+  .cta {
+    font-size: larger;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .card {
+    background-color: var(--color-white);
+    max-width: 288px;
+    padding: 1rem;
+    margin: auto;
+    border-radius: var(--border-radius-m);
+    text-align: center;
+  }
+
+  .card-text {
+    padding: 0 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: var(--border-radius-s);
+
+  }
+}

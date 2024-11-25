@@ -16,26 +16,3 @@
     font-family: sans-serif;
   }
 }
-
-@layer base {
-  body > * {
-    display: grid;
-    grid-template-columns: [full-start] auto 1rem [content-start] clamp(
-        320px,
-        80%,
-        1024px
-      ) [content-end] 1rem auto [full-end];
-  }
-
-  header {
-    padding: 1rem 0;
-  }
-
-  .content {
-    grid-column: content;
-  }
-
-  a {
-    font-size: 1rem;
-  }
-}
